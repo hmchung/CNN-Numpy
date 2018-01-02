@@ -29,16 +29,16 @@ batchSize = 1
 trainExamples = 1
 validate = True
 valExamples = 500
-pretrain = True
-trainedModel = "/home/jayant/CS698/assignment3/convnet/models/32_0.01_16000_model.mat"
+pretrain = False
+trainedModel = "/home/chung/ws/python_ws/convnet/models/32_0.01_16000_model.mat"
 
 ###########################
 ## Save Models           ##
 ###########################
-logDirectory = "/home/jayant/CS698/assignment3/convnet/logs/"
-log = True
+logDirectory = "/home/chung/ws/python_ws/convnet/logs/"
+log = False
 trainlog = logDirectory+ str(batchSize) +"_"+ str(lr) + "_train.log"
 vallog =  logDirectory+str(batchSize) +"_"+ str(lr) + "_val.log"
 saveModel = True
-modelDirectory = "/home/jayant/CS698/assignment3/convnet/models/"
+modelDirectory = "/home/chung/ws/python_ws/convnet/models/"
 modelFile = modelDirectory + str(batchSize) + '_'+ str(lr) + '_model.mat'

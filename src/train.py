@@ -29,7 +29,7 @@ if pretrain:
     for i in range(5):
         net.Biases[i] = model['biases'][0][i][0]
 
-mnist = scio.loadmat('../data/mnist_2D.mat')
+mnist = scio.loadmat('../data/mnist_big.mat')
 
 def signal_handler(signal, frame):
             print('You pressed Ctrl+C!')
